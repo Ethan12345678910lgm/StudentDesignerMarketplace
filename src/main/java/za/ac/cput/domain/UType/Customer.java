@@ -11,7 +11,7 @@ import jakarta.persistence.PrimaryKeyJoinColumn;
 import za.ac.cput.domain.User;
 
 @Entity
-@PrimaryKeyJoinColumn(name = "userId")
+@PrimaryKeyJoinColumn(name = "user_id", referencedColumnName = "user_id")
 public class Customer extends User {
 
     private String paymentMethod;
